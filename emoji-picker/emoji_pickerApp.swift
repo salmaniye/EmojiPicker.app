@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct emoji_pickerApp: App {
+    @NSApplicationDelegateAdaptor(SimpleAppDelegate.self) var appDelegate
+    
     var body: some Scene {
-        WindowGroup {
-            ContentView()
+        Settings {
+            EmptyView()
         }
     }
 }
